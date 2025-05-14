@@ -1,0 +1,577 @@
+[
+  {
+    "job_id": 1,
+    "title": "Software Engineer",
+    "company": "Google",
+    "location": "Mountain View, CA",
+    "salary": {
+      "min": 145000,
+      "max": 195000,
+      "currency": "dollar"
+    },
+    "jobType": "Full-Time",
+    "posted": "2025-05-15",
+    "deadline": "2025-06-15",
+    "description": "Build scalable systems at Google, working on innovative projects in AI and cloud computing. Collaborate with top engineers to deliver high-impact solutions.",
+    "requirements": [
+      "4+ years of software development experience",
+      "Proficiency in Python or Java",
+      "Strong problem-solving skills",
+      "Bachelor’s degree in Computer Science"
+    ],
+    "benefits": [
+      "Stock options",
+      "Comprehensive health plans",
+      "Generous PTO",
+      "Learning stipend"
+    ],
+    "company_logo": "https://www.gstatic.com/marketing-cms/assets/images/d5/dc/cfe9ce8b4425b410b49b7f2dd3f3/g.webp=s96-fcrop64=1,00000000ffffffff-rw",
+    "category": "Technology",
+    "expertise": "Expert",
+    "hr_email": "john.doe@google.com",
+    "hr_name": "John Doe"
+  },
+  {
+    "job_id": 2,
+    "title": "Data Scientist",
+    "company": "Amazon",
+    "location": "Seattle, WA (Remote)",
+    "salary": {
+      "min": 135000,
+      "max": 185000,
+      "currency": "dollar"
+    },
+    "jobType": "Full-Time",
+    "posted": "2025-05-16",
+    "deadline": "2025-06-16",
+    "description": "Drive insights for Amazon’s e-commerce platform using advanced analytics. Develop predictive models to optimize business strategies.",
+    "requirements": [
+      "Master’s in Data Science or related field",
+      "Proficiency in Python and SQL",
+      "Experience with machine learning",
+      "Strong analytical skills"
+    ],
+    "benefits": [
+      "Remote work options",
+      "Employee discounts",
+      "Health insurance",
+      "Career growth"
+    ],
+    "company_logo": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
+    "category": "Data Science",
+    "expertise": "Expert",
+    "hr_email": "sarah.johnson@amazon.com",
+    "hr_name": "Sarah Johnson"
+  },
+  {
+    "job_id": 3,
+    "title": "UX Designer",
+    "company": "Adobe",
+    "location": "San Jose, CA",
+    "salary": {
+      "min": 115000,
+      "max": 155000,
+      "currency": "dollar"
+    },
+    "jobType": "Full-Time",
+    "posted": "2025-05-17",
+    "deadline": "2025-06-17",
+    "description": "Design intuitive interfaces for Adobe’s creative software. Collaborate with product teams to enhance user experiences across platforms.",
+    "requirements": [
+      "3+ years of UX design experience",
+      "Proficiency in Figma",
+      "Strong portfolio",
+      "Bachelor’s degree in Design"
+    ],
+    "benefits": [
+      "Stock awards",
+      "Health plans",
+      "Creative work environment",
+      "Professional development"
+    ],
+    "company_logo": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Adobe_logo_and_wordmark_%282017%29.svg",
+    "category": "Design",
+    "expertise": "Intermediate",
+    "hr_email": "emily.carter@adobe.com",
+    "hr_name": "Emily Carter"
+  },
+  {
+    "job_id": 4,
+    "title": "Marketing Manager",
+    "company": "PepsiCo",
+    "location": "Purchase, NY",
+    "salary": {
+      "min": 105000,
+      "max": 145000,
+      "currency": "dollar"
+    },
+    "jobType": "Full-Time",
+    "posted": "2025-05-18",
+    "deadline": "2025-06-18",
+    "description": "Lead PepsiCo’s global marketing campaigns. Develop strategies to boost brand engagement through innovative digital and traditional channels.",
+    "requirements": [
+      "5+ years of marketing experience",
+      "Expertise in digital marketing",
+      "Strong leadership skills",
+      "Bachelor’s degree in Marketing"
+    ],
+    "benefits": [
+      "Performance bonuses",
+      "Health benefits",
+      "Travel opportunities",
+      "Employee discounts"
+    ],
+    "company_logo": "https://upload.wikimedia.org/wikipedia/commons/a/a6/PepsiCo_logo.svg",
+    "category": "Marketing",
+    "expertise": "Expert",
+    "hr_email": "michael.brown@pepsico.com",
+    "hr_name": "Michael Brown"
+  },
+  {
+    "job_id": 5,
+    "title": "Financial Analyst",
+    "company": "JPMorgan Chase",
+    "location": "New York, NY",
+    "salary": {
+      "min": 100000,
+      "max": 140000,
+      "currency": "dollar"
+    },
+    "jobType": "Full-Time",
+    "posted": "2025-05-19",
+    "deadline": "2025-06-19",
+    "description": "Support JPMorgan’s investment strategies with data-driven insights. Analyze financial trends to guide client decisions in global markets.",
+    "requirements": [
+      "3+ years of financial analysis experience",
+      "Proficiency in Excel",
+      "CFA or MBA preferred",
+      "Attention to detail"
+    ],
+    "benefits": [
+      "401(k) matching",
+      "Performance bonuses",
+      "Health plans",
+      "Career advancement"
+    ],
+    "company_logo": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Logo_of_JPMorganChase_2024.svg",
+    "category": "Finance",
+    "expertise": "Expert",
+    "hr_email": "laura.martin@jpmorgan.com",
+    "hr_name": "Laura Martin"
+  },
+  {
+    "job_id": 6,
+    "title": "Frontend Developer",
+    "company": "Meta",
+    "location": "Menlo Park, CA",
+    "salary": {
+      "min": 140000,
+      "max": 190000,
+      "currency": "dollar"
+    },
+    "jobType": "Contract",
+    "posted": "2025-05-20",
+    "deadline": "2025-06-20",
+    "description": "Build engaging user interfaces for Meta’s social platforms. Work with React to create seamless, responsive web experiences.",
+    "requirements": [
+      "4+ years of frontend development",
+      "Expertise in JavaScript and React",
+      "Strong UI/UX knowledge",
+      "Bachelor’s degree in Computer Science"
+    ],
+    "benefits": [
+      "Stock options",
+      "Health insurance",
+      "Flexible hours",
+      "Learning opportunities"
+    ],
+    "company_logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
+    "category": "Development",
+    "expertise": "Intermediate",
+    "hr_email": "david.wilson@meta.com",
+    "hr_name": "David Wilson"
+  },
+  {
+    "job_id": 7,
+    "title": "Cloud Architect",
+    "company": "Microsoft",
+    "location": "Redmond, WA",
+    "salary": {
+      "min": 160000,
+      "max": 210000,
+      "currency": "dollar"
+    },
+    "jobType": "Full-Time",
+    "posted": "2025-05-21",
+    "deadline": "2025-06-21",
+    "description": "Design scalable cloud solutions for Microsoft Azure. Lead architecture projects to support enterprise clients worldwide.",
+    "requirements": [
+      "5+ years of cloud architecture experience",
+      "Expertise in Azure or AWS",
+      "Strong technical leadership",
+      "Bachelor’s degree in IT"
+    ],
+    "benefits": [
+      "401(k) matching",
+      "Health and wellness programs",
+      "Flexible work",
+      "Career growth"
+    ],
+    "company_logo": "https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg",
+    "category": "Technology",
+    "expertise": "Expert",
+    "hr_email": "anna.thompson@microsoft.com",
+    "hr_name": "Anna Thompson"
+  },
+  {
+    "job_id": 8,
+    "title": "Machine Learning Engineer",
+    "company": "NVIDIA",
+    "location": "Santa Clara, CA",
+    "salary": {
+      "min": 150000,
+      "max": 200000,
+      "currency": "dollar"
+    },
+    "jobType": "Full-Time",
+    "posted": "2025-05-22",
+    "deadline": "2025-06-22",
+    "description": "Develop AI models for NVIDIA’s cutting-edge platforms. Optimize algorithms for autonomous systems and deep learning applications.",
+    "requirements": [
+      "PhD or Master’s in AI or related field",
+      "Proficiency in TensorFlow or PyTorch",
+      "Experience with GPUs",
+      "Strong coding skills"
+    ],
+    "benefits": [
+      "Stock awards",
+      "Health plans",
+      "Innovation-driven culture",
+      "Professional development"
+    ],
+    "company_logo": "https://www.citypng.com/public/uploads/preview/hd-nvidia-eye-logo-icon-png-701751694965655t2lbe7yugk.png",
+    "category": "Data Science",
+    "expertise": "Expert",
+    "hr_email": "james.lee@nvidia.com",
+    "hr_name": "James Lee"
+  },
+  {
+    "job_id": 9,
+    "title": "Graphic Designer",
+    "company": "Canva",
+    "location": "Austin, TX (Hybrid)",
+    "salary": {
+      "min": 60000,
+      "max": 90000,
+      "currency": "dollar"
+    },
+    "jobType": "Intern",
+    "posted": "2025-05-23",
+    "deadline": "2025-06-23",
+    "description": "Create stunning visuals for Canva’s design platform. Collaborate with marketing teams to produce engaging graphics for global users.",
+    "requirements": [
+      "1+ years of graphic design experience",
+      "Proficiency in Adobe Creative Suite",
+      "Strong portfolio",
+      "Pursuing Bachelor’s degree in Graphic Design"
+    ],
+    "benefits": [
+      "Flexible work options",
+      "Health insurance",
+      "Creative freedom",
+      "Team events"
+    ],
+    "company_logo": "https://1000logos.net/wp-content/uploads/2023/02/Canva-logo.png",
+    "category": "Design",
+    "expertise": "Fresher",
+    "hr_email": "sophia.miller@canva.com",
+    "hr_name": "Sophia Miller"
+  },
+  {
+    "job_id": 10,
+    "title": "Digital Marketing Specialist",
+    "company": "Nike",
+    "location": "Beaverton, OR",
+    "salary": {
+      "min": 95000,
+      "max": 130000,
+      "currency": "dollar"
+    },
+    "jobType": "Part-Time",
+    "posted": "2025-05-24",
+    "deadline": "2025-06-24",
+    "description": "Drive Nike’s digital presence through targeted campaigns. Optimize SEO, social media, and email marketing to boost brand engagement.",
+    "requirements": [
+      "4+ years of digital marketing experience",
+      "Expertise in Google Analytics",
+      "Strong content creation skills",
+      "Bachelor’s degree in Marketing"
+    ],
+    "benefits": [
+      "Employee discounts",
+      "Health benefits",
+      "Performance bonuses",
+      "Career development"
+    ],
+    "company_logo": "https://www.citypng.com/public/uploads/preview/black-nike-logo-transparent-background-701751694777156f3ewilq1js.png",
+    "category": "Marketing",
+    "expertise": "Intermediate",
+    "hr_email": "robert.jackson@nike.com",
+    "hr_name": "Robert Jackson"
+  },
+  {
+    "job_id": 11,
+    "title": "Investment Banker",
+    "company": "Morgan Stanley",
+    "location": "New York, NY",
+    "salary": {
+      "min": 120000,
+      "max": 160000,
+      "currency": "dollar"
+    },
+    "jobType": "Full-Time",
+    "posted": "2025-05-25",
+    "deadline": "2025-06-25",
+    "description": "Advise clients on M&A and capital markets at Morgan Stanley. Structure complex deals to drive financial success for global corporations.",
+    "requirements": [
+      "4+ years of investment banking experience",
+      "Strong financial modeling skills",
+      "MBA preferred",
+      "Excellent communication"
+    ],
+    "benefits": [
+      "High earning potential",
+      "Health plans",
+      "Career advancement",
+      "Networking opportunities"
+    ],
+    "company_logo": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Morgan_Stanley_Logo.png",
+    "category": "Finance",
+    "expertise": "Expert",
+    "hr_email": "olivia.white@morganstanley.com",
+    "hr_name": "Olivia White"
+  },
+  {
+    "job_id": 12,
+    "title": "Backend Developer",
+    "company": "Spotify",
+    "location": "New York, NY (Remote)",
+    "salary": {
+      "min": 130000,
+      "max": 180000,
+      "currency": "dollar"
+    },
+    "jobType": "Contract",
+    "posted": "2025-05-26",
+    "deadline": "2025-06-26",
+    "description": "Build robust APIs for Spotify’s music streaming platform. Optimize backend systems to support millions of users worldwide.",
+    "requirements": [
+      "4+ years of backend development",
+      "Proficiency in Node.js or Python",
+      "Experience with databases",
+      "Bachelor’s degree in Computer Science"
+    ],
+    "benefits": [
+      "Remote work",
+      "Health insurance",
+      "Stock options",
+      "Music perks"
+    ],
+    "company_logo": "https://www.citypng.com/public/uploads/preview/spotify-round-logo-icon-sign-symbol-png-701751694969846wzdxxmjjek.png",
+    "category": "Development",
+    "expertise": "Intermediate",
+    "hr_email": "daniel.green@spotify.com",
+    "hr_name": "Daniel Green"
+  },
+  {
+    "job_id": 13,
+    "title": "Cybersecurity Specialist",
+    "company": "Cisco",
+    "location": "San Jose, CA",
+    "salary": {
+      "min": 140000,
+      "max": 190000,
+      "currency": "dollar"
+    },
+    "jobType": "Contract",
+    "posted": "2025-05-27",
+    "deadline": "2025-06-27",
+    "description": "Protect Cisco’s networks from cyber threats. Implement security protocols and monitor systems to ensure data integrity.",
+    "requirements": [
+      "5+ years of cybersecurity experience",
+      "Knowledge of firewalls and SIEM",
+      "Certifications like CISSP",
+      "Bachelor’s degree in IT"
+    ],
+    "benefits": [
+      "Health and vision plans",
+      "Career certifications",
+      "Flexible schedules",
+      "Team collaboration"
+    ],
+    "company_logo": "https://www.citypng.com/public/uploads/preview/cisco-blue-logo-png-735811696610010utjhevbxcl.png",
+    "category": "Technology",
+    "expertise": "Expert",
+    "hr_email": "lisa.roberts@cisco.com",
+    "hr_name": "Lisa Roberts"
+  },
+  {
+    "job_id": 14,
+    "title": "Data Analyst",
+    "company": "Salesforce",
+    "location": "San Francisco, CA",
+    "salary": {
+      "min": 80000,
+      "max": 110000,
+      "currency": "dollar"
+    },
+    "jobType": "Intern",
+    "posted": "2025-05-28",
+    "deadline": "2025-06-28",
+    "description": "Analyze customer data to enhance Salesforce’s CRM platform. Provide actionable insights to drive business growth.",
+    "requirements": [
+      "1+ years of data analysis experience",
+      "Proficiency in SQL and Tableau",
+      "Pursuing Bachelor’s degree in Statistics"
+    ],
+    "benefits": [
+      "Health benefits",
+      "Flexible work",
+      "Career development",
+      "Team events"
+    ],
+    "company_logo": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Salesforce.com_logo.svg",
+    "category": "Data Science",
+    "expertise": "Fresher",
+    "hr_email": "chris.evans@salesforce.com",
+    "hr_name": "Chris Evans"
+  },
+  {
+    "job_id": 15,
+    "title": "Product Designer",
+    "company": "Airbnb",
+    "location": "San Francisco, CA (Hybrid)",
+    "salary": {
+      "min": 100000,
+      "max": 140000,
+      "currency": "dollar"
+    },
+    "jobType": "Freelance",
+    "posted": "2025-05-29",
+    "deadline": "2025-06-29",
+    "description": "Design user-centric interfaces for Airbnb’s travel platform. Create seamless booking experiences for global users.",
+    "requirements": [
+      "4+ years of product design experience",
+      "Proficiency in Sketch or Figma",
+      "Strong portfolio",
+      "Bachelor’s degree in Design"
+    ],
+    "benefits": [
+      "Stock options",
+      "Health plans",
+      "Travel credits",
+      "Creative culture"
+    ],
+    "company_logo": "https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_B%C3%A9lo.svg",
+    "category": "Design",
+    "expertise": "Intermediate",
+    "hr_email": "julia.moore@airbnb.com",
+    "hr_name": "Julia Moore"
+  },
+  {
+    "job_id": 16,
+    "title": "Content Strategist",
+    "company": "Disney",
+    "location": "Burbank, CA",
+    "salary": {
+      "min": 90000,
+      "max": 125000,
+      "currency": "dollar"
+    },
+    "jobType": "Part-Time",
+    "posted": "2025-05-30",
+    "deadline": "2025-06-30",
+    "description": "Develop content strategies for Disney’s streaming platforms. Create compelling narratives to engage global audiences.",
+    "requirements": [
+      "4+ years of content strategy experience",
+      "Strong storytelling skills",
+      "Experience with CMS",
+      "Bachelor’s degree in Marketing"
+    ],
+    "benefits": [
+      "Health insurance",
+      "Employee discounts",
+      "Creative environment",
+      "Career growth"
+    ],
+    "company_logo": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg",
+    "category": "Marketing",
+    "expertise": "Intermediate",
+    "hr_email": "thomas.harris@disney.com",
+    "hr_name": "Thomas Harris"
+  },
+  {
+    "job_id": 17,
+    "title": "Accountant",
+    "company": "Deloitte",
+    "location": "Chicago, IL",
+    "salary": {
+      "min": 70000,
+      "max": 100000,
+      "currency": "dollar"
+    },
+    "jobType": "Intern",
+    "posted": "2025-05-31",
+    "deadline": "2025-06-30",
+    "description": "Provide accounting services for Deloitte’s clients. Ensure compliance with financial regulations and deliver accurate reports.",
+    "requirements": [
+      "1+ years of accounting experience",
+      "Pursuing CPA certification",
+      "Proficiency in accounting software",
+      "Pursuing Bachelor’s degree in Accounting"
+    ],
+    "benefits": [
+      "401(k) matching",
+      "Health plans",
+      "Career advancement",
+      "Professional development"
+    ],
+    "company_logo": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Logo_of_Deloitte.svg",
+    "category": "Finance",
+    "expertise": "Fresher",
+    "hr_email": "emma.clark@deloitte.com",
+    "hr_name": "Emma Clark"
+  },
+  {
+    "job_id": 18,
+    "title": "Full Stack Developer",
+    "company": "Shopify",
+    "location": "Ottawa, Canada (Remote)",
+    "salary": {
+      "min": 135000,
+      "max": 185000,
+      "currency": "dollar"
+    },
+    "jobType": "Contract",
+    "posted": "2025-06-01",
+    "deadline": "2025-07-01",
+    "description": "Build end-to-end solutions for Shopify’s e-commerce platform. Develop features to empower merchants globally.",
+    "requirements": [
+      "5+ years of full stack development",
+      "Proficiency in Ruby and React",
+      "Experience with APIs",
+      "Bachelor’s degree in Computer Science"
+    ],
+    "benefits": [
+      "Remote work",
+      "Health benefits",
+      "Stock options",
+      "Learning budget"
+    ],
+    "company_logo": "https://cdn.shopify.com/shopifycloud/brochure/assets/brand-assets/shopify-logo-primary-logo-456baa801ee66a0a435671082365958316831c9960c480451dd0330bcdae304f.svg",
+    "category": "Development",
+    "expertise": "Expert",
+    "hr_email": "benjamin.taylor@shopify.com",
+    "hr_name": "Benjamin Taylor"
+  }
+]
