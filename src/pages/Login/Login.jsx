@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router";
 import useAuth from "../../hooks/useAuth";
 import { getFriendlyAuthError } from "../../hooks/useAuthErros";
 import { toast } from "react-toastify";
+import axios from "axios";
 
 const Login = () => {
   // navigate
@@ -27,8 +28,21 @@ const Login = () => {
 
     //   register in firebase
     try {
+      // if successful
       const userCredential = await signInAuth(email, password);
-      console.log(userCredential.user);
+      console.log(userCredential?.user);
+      const user = userCredential?.user?.email;
+      // call token api
+      axios
+        .post(`http://localhost:5000/jwt`, { user }, { withCredentials: true })
+        .then((res) => {
+          console.log(res.data);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+
+      // show toast on success
       toast.success("Successfully logged in", {
         position: "top-right",
         autoClose: 3000,
@@ -62,7 +76,17 @@ const Login = () => {
   const handleGoogle = async () => {
     try {
       const userCredential = await signInGoogle();
-      console.log(userCredential.user);
+      console.log(userCredential?.user);
+      const user = userCredential?.user?.email;
+      // call token api
+      axios
+        .post(`http://localhost:5000/jwt`, { user }, { withCredentials: true })
+        .then((res) => {
+          console.log(res.data);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
       toast.success("Successfully logged in", {
         position: "top-right",
         autoClose: 3000,
