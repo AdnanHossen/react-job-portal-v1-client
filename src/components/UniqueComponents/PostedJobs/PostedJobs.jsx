@@ -1,30 +1,31 @@
 import React, { useEffect, useState } from "react";
 import useAuth from "../../../hooks/useAuth";
-// import axios from "axios";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
 import { Link } from "react-router";
 
-const MyApplications = () => {
-  // state
-  const [applications, setApplications] = useState([]);
-  // axios secured
-  const axiosSecure = useAxiosSecure();
-  // user auth
+const PostedJobs = () => {
+  // user from observer
   const { user } = useAuth();
-  const email = user?.email;
   console.log(user?.email);
 
+  // axios secure
+  const axiosSecure = useAxiosSecure();
+
+  // state declare
+  const [postedJobs, setPostedJobs] = useState([]);
+
+  // get the posted jobs base on email
   useEffect(() => {
     axiosSecure
-      .get(`/applications?applicantEmail=${email}`)
+      .get(`/posted-jobs?hr_email=${user?.email}`)
       .then((res) => {
         console.log(res.data);
-        setApplications(res.data);
+        setPostedJobs(res.data);
       })
       .catch((err) => {
         console.log(err);
       });
-  }, [axiosSecure, email]);
+  }, [user, axiosSecure]);
 
   // return code
   return (
@@ -46,7 +47,7 @@ const MyApplications = () => {
         </thead>
         <tbody>
           {/* row 1 */}
-          {applications.map((application) => (
+          {postedJobs.map((job) => (
             <tr>
               <th>
                 <label>
@@ -58,32 +59,28 @@ const MyApplications = () => {
                   <div className="avatar">
                     <div className="mask mask-squircle h-12 w-12">
                       <img
-                        src={application?.job_found?.company_logo}
+                        src={job.company_logo}
                         alt="Avatar Tailwind CSS Component"
                       />
                     </div>
                   </div>
                   <div>
-                    <div className="font-bold">
-                      {application?.job_found?.company}
-                    </div>
-                    <div className="text-sm opacity-50">
-                      {application?.job_found?.location}
-                    </div>
+                    <div className="font-bold">{job.company}</div>
+                    <div className="text-sm opacity-50">{job.location}</div>
                   </div>
                 </div>
               </td>
               <td>
-                {application.title}
+                {job.title}
                 <br />
                 <span className="badge badge-ghost badge-sm">
-                  {application?.job_found?.category}
+                  {job.category}
                 </span>
               </td>
-              <td>{application?.job_found?.jobType}</td>
+              <td>{job.jobType}</td>
               <th>
                 <button className="btn btn-ghost btn-xs">
-                  <Link to={`/jobs/${application._id}`}>Details</Link>
+                  <Link to={`/jobs/${job._id}`}>Details</Link>
                 </button>
               </th>
             </tr>
@@ -94,4 +91,4 @@ const MyApplications = () => {
   );
 };
 
-export default MyApplications;
+export default PostedJobs;

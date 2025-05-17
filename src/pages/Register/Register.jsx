@@ -8,11 +8,14 @@ import { getFriendlyAuthError } from "../../hooks/useAuthErros";
 const Register = () => {
   // navigate
   const navigate = useNavigate();
+
   // const context value
   const { signUpAuth, signInGoogle } = useAuth();
 
+  // password toggle
   const [showPassword, setShowPassword] = useState(false);
 
+  // password toggle function
   const togglePassword = () => {
     setShowPassword(!showPassword);
   };
@@ -27,7 +30,9 @@ const Register = () => {
     //   register in firebase
     try {
       const userCredential = await signUpAuth(email, password);
-      console.log(userCredential.user);
+      console.log(userCredential?.user);
+
+      // show toast alert
       toast.success("Account successfully created", {
         position: "top-right",
         autoClose: 3000,
@@ -38,9 +43,12 @@ const Register = () => {
         progress: undefined,
         theme: "light",
       });
+
+      // navigate to home page
       navigate("/");
     } catch (error) {
       console.log(error);
+      // error through hooks
       const friendlyError = getFriendlyAuthError(error);
       console.log(friendlyError);
 

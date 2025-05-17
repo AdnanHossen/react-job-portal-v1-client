@@ -7,6 +7,10 @@ import AllJobs from "../components/UniqueComponents/AllJobs/AllJobs";
 import JobDetails from "../components/UniqueComponents/JobDetails/JobDetails";
 import Application from "../components/UniqueComponents/Application/Application";
 import MyApplications from "../components/UniqueComponents/MyApplications/MyApplications";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import AddJobs from "../components/UniqueComponents/AddJobs/AddJobs";
+import PostedJobs from "../components/UniqueComponents/PostedJobs/PostedJobs";
+import CategoryJobs from "../components/UniqueComponents/CategoryJobs/CategoryJobs";
 
 const router = createBrowserRouter([
   {
@@ -22,18 +26,46 @@ const router = createBrowserRouter([
         element: <AllJobs></AllJobs>,
       },
       {
+        path: "/category/:category",
+        element: <CategoryJobs></CategoryJobs>,
+      },
+      {
         path: "/jobs/:id",
         element: <JobDetails></JobDetails>,
         loader: ({ params }) =>
           fetch(`http://localhost:5000/jobs/${params.id}`),
       },
       {
+        path: "/add-jobs",
+        element: (
+          <PrivateRoute>
+            <AddJobs></AddJobs>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "posted-jobs",
+        element: (
+          <PrivateRoute>
+            <PostedJobs></PostedJobs>
+          </PrivateRoute>
+        ),
+      },
+      {
         path: "/application/:id",
-        element: <Application></Application>,
+        element: (
+          <PrivateRoute>
+            <Application></Application>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/applications/me",
-        element: <MyApplications></MyApplications>,
+        element: (
+          <PrivateRoute>
+            <MyApplications></MyApplications>
+          </PrivateRoute>
+        ),
       },
       {
         path: "register",

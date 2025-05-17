@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaEye, FaEyeSlash, FaGoogle } from "react-icons/fa6";
-import { Link, useNavigate } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router";
 import useAuth from "../../hooks/useAuth";
 import { getFriendlyAuthError } from "../../hooks/useAuthErros";
 import { toast } from "react-toastify";
@@ -11,6 +11,9 @@ const Login = () => {
   const navigate = useNavigate();
   // context value
   const { signInAuth, signInGoogle } = useAuth();
+  const location = useLocation();
+  console.log(location);
+  const from = location?.state || "/";
 
   // password toggle
   const [showPassword, setShowPassword] = useState(false);
@@ -28,19 +31,10 @@ const Login = () => {
 
     //   register in firebase
     try {
-      // if successful
+      // signin to firebase
       const userCredential = await signInAuth(email, password);
+      // if successful
       console.log(userCredential?.user);
-      const user = userCredential?.user?.email;
-      // call token api
-      axios
-        .post(`http://localhost:5000/jwt`, { user }, { withCredentials: true })
-        .then((res) => {
-          console.log(res.data);
-        })
-        .catch((err) => {
-          console.log(err);
-        });
 
       // show toast on success
       toast.success("Successfully logged in", {
@@ -53,7 +47,9 @@ const Login = () => {
         progress: undefined,
         theme: "light",
       });
-      navigate("/");
+
+      // navigate to state or home
+      navigate(from);
     } catch (error) {
       console.log(error);
       const friendlyError = getFriendlyAuthError(error);
